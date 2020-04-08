@@ -9,13 +9,17 @@
 
         </div>
         <div id="loginContainer">
-            <form action="">
-                <label for="">
-                    <input type="text">
+            <form action="" method = "GET">
+                <label for="Name" > 
+                    Name:
+                    <input id = "Name" name = "Name" type="text" placeholder="John" required>
                 </label>
-                <label for="">
-                    <input type="text">
+                <label for="Password">
+                    Password: 
+                    <input id = "Password" name = "Password" type="password" required>
                 </label>
+                <button type="reset">Clear fields</button>
+                <button type="submit">Log In</button>
             </form>
         </div>
     </div>        
