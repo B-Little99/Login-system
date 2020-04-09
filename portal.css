@@ -12,7 +12,7 @@ body {
 #headerContainer {
     margin: 0;
     background-color: #637DFF;
-    padding: 50px
+    padding: 50px;
 }
 
 header {
@@ -35,23 +35,34 @@ ul {
 
 }
 
+
+
 li {
     position: relative;
     color: grey;
     float: left; /* Displays the list items on one line removing its default block status*/
     text-align: center;
-    left: 40%;
+    left: 8%;
 }
 
 a {
     display: block;
-    padding: 8px;
+    padding: 25px 0px ;
     width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin: 0px 60px ;
+}
+
+a:hover {
+    background-color: rgb(67, 85, 175);
 }
 
 #fullContainer {
     width: 70vw;
     padding: 50px;
+    padding-top: 40px;
     align-items: center;
     margin: 20px 160px;
 }
