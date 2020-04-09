@@ -1,0 +1,109 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+#container {
+    font-family:'Raleway', sans-serif;
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, 1fr); */
+    /* grid-template-rows: minmax(150px, auto); */
+    /* grid-template-areas: 
+        "header header" /* The grid-template is used from the grid-area: name in the containers*/
+        /*"img login"; */
+    color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+
+}
+
+#headerContainer {
+    width: 80%;
+    background-color: #637DFF;
+    text-align: center;
+
+}
+
+header {
+    width: 600px;
+    font-size: 65px;
+    color: white;
+    word-wrap: break-word;
+    padding: 0px;
+    /* margin: 45px 50px; */
+    height: auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+#loginContainer {
+    background-color: white;
+    width: 450px;
+    text-align: center;
+    margin: 50px;
+    margin-top: 35%;
+    align-items: center;
+}
+
+img {
+    width: 90%;
+    margin: 50px;
+    grid-area: img;
+    text-align: center;
+}
+
+h2 {
+    color: #637DFF;
+    font-size: 35px;
+}
+
+label {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    margin: 15px 50px 0px;
+    padding: 10px;
+}
+
+input{
+    background-color: white;
+    width: 310px;
+    height: 25px;
+    color: black;
+    border: 1px solid #637DFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0px;
+    font-size: 20px;
+    outline: none;
+}
+
+button {
+    width: 150px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    margin: 13px;
+    padding: 10px;
+    border: 1px solid #637DFF;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #637DFF;
+    color: white;
+    /* font-size: ; */
+    transform: scale(1.1);
+}
+
+#buttonContainer {
+    margin: 20px;
+}
