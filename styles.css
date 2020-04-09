@@ -83,12 +83,6 @@ input {
     font-family: 'Raleway', sans-serif;
 }
 
-#name:valid {
-    border-color: green;
-}
-
-
-
 button {
     width: 150px;
     font-size: 15px;

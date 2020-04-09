@@ -1,3 +1,4 @@
+//The following lines of code up to 56 are for the log in.
 const nameLabel = document.getElementById("nameLabel");
 const passwordLabel = document.getElementById("passwordLabel");
 const name = document.getElementById("Name");
@@ -53,3 +54,5 @@ function clearColor(){
     passwordLabel.style.color = "";
     error.innerText = "";
 }
+
+//The following code is for the portal once logged in.
