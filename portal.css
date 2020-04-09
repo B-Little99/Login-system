@@ -1,0 +1,81 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently  supported by Chrome, Opera and Firefox */
+}
+
+#headerContainer {
+    margin: 0;
+    background-color: #637DFF;
+    padding: 50px
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+#navContainer {
+    /* background-color: #637DFF; */
+}
+
+ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0; /* Removes default settings */
+    padding: 0;
+    background-color: #637DFF;
+    overflow: hidden; /* This makes the nav bar background colour go across the page */
+
+}
+
+li {
+    position: relative;
+    color: grey;
+    float: left; /* Displays the list items on one line removing its default block status*/
+    text-align: center;
+    left: 40%;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    width: 100%;
+}
+
+#fullContainer {
+    width: 70vw;
+    padding: 50px;
+    align-items: center;
+    margin: 20px 160px;
+}
+
+
+h1 {
+    font-style: italic;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#h2Container {
+    /* display: flex;
+    flex-direction: row; */
+}
+
+h2 {
+    margin-top: 45px;
+    color: #637DFF;
+    border-bottom: 2px solid #637DFF;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
