@@ -77,16 +77,33 @@ h1 {
 
 #skillsContainer {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(2, 400px);
+    grid-auto-rows: repeat(3, 150px);
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     justify-items: center;
+    gap: 30px;
+    background-color: #637DFF;
+    overflow: visible;
 }
 
-#divskills {
+.divSkill {
+    margin: 15px;
+    cursor: pointer;
+}
 
+.skillsPara {
+    height: 240px;
+}
 
+h3 {
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+    font-size: 24px;  
+}
+
+.divSkill:hover {
+    transform: scale(1.1);
 }
 
 
