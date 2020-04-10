@@ -14,12 +14,12 @@ function addSolvingText() {
     //This variable holds the number of children the div element has for its section
     let childCount = document.getElementById("divProblemSolving").childElementCount; 
 
-    if (childCount === 1) { //If there is only one child (the H3 element) it will add the text.
+    if (childCount === 1) { //If there is only one child (the H3 element as default) it will add the text.
         let problemSolvingP = document.createElement("p");
-        problemSolvingP.classList = "skillsPara";
+        problemSolvingP.classList = "skillsPara"; // This adds the class and text to the new element
         problemSolvingP.innerText = "Being able to quality check my work for errors was an important element to my role, ensuring I continually improved what I produced. A recent example is where a news article had a visual fault in the page. To fix the issue I looked at the HTML and CSS code, compared it to other code and researched to fix the issue.";
         problemSolvingDiv.appendChild(problemSolvingP);
-    } else if (childCount > 1) {
+    } else if (childCount > 1) { // This else if statement checks if there is already the text child within the div and if there is it will remove the last child element which is the added P from the previous if statement
         let lastPSchild = problemSolvingDiv.lastChild;
         problemSolvingDiv.removeChild(lastPSchild);
     }
@@ -107,7 +107,7 @@ function addLeadershipText() {
     if (childCount === 1) { 
         let leadershipP = document.createElement("p");
         leadershipP.classList = "skillsPara";
-        leadershipP.innerText = "Oftentimes, in my previous role I worked independently as well as in a team. A good example of this is the website redesign. When the project lead was away I identified a potential bug with a component on the system. Knowing that the bug warranty was running out I made the decision to contact our agency and log the issue, as it may have fallen out of the warranty and incur further costs if left any longer.";
+        leadershipP.innerText = "In 2019 I undertook The 3 Peaks Challenge with a friend and during the last mountain they were demotivated and wanted to stop and go back. To help motivate him I reminded him of the end goal, the amazing views and the charity he was completing it for. I also gave him some of my snacks and added more regular breaks. Together we made it to the top and completed the final mountain.";
         leadershipDiv.appendChild(leadershipP);
     } else if (childCount > 1) {
         let lastDivChild = leadershipDiv.lastChild;

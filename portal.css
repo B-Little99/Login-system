@@ -32,17 +32,14 @@ ul {
     padding: 0;
     background-color: #637DFF;
     overflow: hidden; /* This makes the nav bar background colour go across the page */
-
 }
-
-
 
 li {
     position: relative;
     color: grey;
     float: left; /* Displays the list items on one line removing its default block status*/
     text-align: center;
-    left: 8%;
+    left: 10%;
 }
 
 a {
@@ -51,8 +48,8 @@ a {
     width: 100%;
     text-decoration: none;
     color: white;
-    font-size: 35px;
-    margin: 0px 60px ;
+    font-size: 30px;
+    margin: 0px 40px ;
 }
 
 a:hover {
