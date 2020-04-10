@@ -74,10 +74,21 @@ h1 {
     text-align: justify;
 }
 
-#h2Container {
-    /* display: flex;
-    flex-direction: row; */
+
+#skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
+
+#divskills {
+
+
+}
+
 
 h2 {
     margin-top: 45px;

@@ -54,5 +54,3 @@ function clearColor(){
     passwordLabel.style.color = "";
     error.innerText = "";
 }
-
-//The following code is for the portal once logged in.
