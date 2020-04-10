@@ -85,6 +85,7 @@ h1 {
     gap: 30px;
     background-color: #637DFF;
     overflow: visible;
+    padding-bottom: 30px;
 }
 
 .divSkill {
@@ -105,7 +106,6 @@ h3 {
 .divSkill:hover {
     transform: scale(1.1);
 }
-
 
 h2 {
     margin-top: 45px;
