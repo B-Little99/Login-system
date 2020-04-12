@@ -3,6 +3,7 @@
         <title>BJL portal</title>
         <link rel="stylesheet" href="portal.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/628b4c192e.js" crossorigin="anonymous"></script> <!-- This is to load icons -->
     </head>
     <body>
 
@@ -11,12 +12,12 @@
         </div>
 
         <div id="navContainer">
-            <ul>
-                <li><a href="#About">About me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Languages">Languages</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact me</a></li>
+            <ul id = ulNav>
+                <li class = "liNav"><a href="#About">About me</a></li>
+                <li class = "liNav"><a href="#Skills">Skills</a></li>
+                <li class = "liNav"><a href="#Languages">Languages</a></li>
+                <li class = "liNav"><a href="#Projects">Projects</a></li>
+                <li class = "liNav"><a href="#Contact">Contact me</a></li>
             </ul>
         </div>
 
@@ -51,7 +52,7 @@
                         <h3 id = "problemSolvSkill">Problem Solving</h3>
                     </div>
                     <div id = "divTimeManagement" class = "divSkill">
-                        <h3 id = "timeManageSkill">Time Management and Organisation</h3>
+                        <h3 id = "timeManageSkill">Time Management</h3>
                     </div>
                 </div>
             </div>
@@ -59,7 +60,33 @@
             <div class="h2Container">
                 <h2 id = "Languages">Languages</h2>
                 <div id="langWrapper">
-
+                        <div class="carouselContainer">
+                            <div class="carouselButton">
+                                <
+                            </div>
+                            <ul class="carouselTrack">
+                                <li class="carouselSlide">
+                                    <p>JavaScript</p>
+                                    <i class="fab fa-js-square fa-7x"></i>
+                                </li>
+                                <li class="carouselSlide">
+                                    <p>HTML</p>
+                                    <i class="fab fa-html5 fa-7x"></i>
+                                </li>
+                                <li class="carouselSlide">
+                                    <p>CSS</p>
+                                    <i class="fab fa-css3-alt fa-7x"></i>
+                                </li>
+                            </ul>
+                            <div class="carouselButton">
+                                >
+                            </div>
+                        </div>
+                </div>
+                <div class="carouselNav">
+                    <button class="cNavIndicators currentSlide"></button>
+                    <button class="cNavIndicators"></button>
+                    <button class="cNavIndicators"></button>
                 </div>
             </div>
 

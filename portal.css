@@ -26,7 +26,7 @@ header {
     /* background-color: #637DFF; */
 }
 
-ul {
+#ulNav {
     list-style-type: none; /* Removes bullet points */
     margin: 0; /* Removes default settings */
     padding: 0;
@@ -34,7 +34,7 @@ ul {
     overflow: hidden; /* This makes the nav bar background colour go across the page */
 }
 
-li {
+.liNav {
     position: relative;
     color: grey;
     float: left; /* Displays the list items on one line removing its default block status*/
@@ -82,7 +82,8 @@ h1 {
     gap: 30px;
     background-color: #637DFF;
     overflow: visible;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    border-radius: 4px;
 }
 
 .divSkill {
@@ -112,6 +113,94 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
+    padding: 10px;
 }
 
+
+/* Carousel CSS  for languages*/
+
+#langWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.carouselTrack {
+    background-color: rgb(221, 220, 220);
+    width: 400px;
+    padding: 0;
+    list-style: none;
+    margin: 0 30px 10px;
+    border-radius: 4px;
+}
+
+.carouselSlide {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 125px;
+}
+
+.carouselNav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cNavIndicators {
+    height: 20px;
+    width: 20px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    outline: none;   
+    border: none;
+    margin-left: 12px;
+}
+
+.currentSlide {
+    background-color: rgb(114, 113, 113);
+}
+
+.cNavIndicators:hover {
+    background-color: rgb(114, 113, 113);
+    cursor: pointer;
+}
+
+.carouselButton {
+    border: none;
+    font-size: 50px;
+    color: grey;
+    outline: none;
+    background-color: none;
+}
+
+.carouselButton:hover {
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+.fa-js-square {
+    color: yellow;
+    opacity: 0.7;
+}
+
+.fa-html5 {
+    color: orange;
+    opacity: 0.7;
+}
+
+.fa-css3-alt {
+    color: blue;
+    opacity: 0.7;
+}
