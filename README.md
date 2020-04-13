@@ -11,6 +11,8 @@ Things I learnt:
 
     lastChild
 
+    DOM manipulation - using previousElementSibling, firstElementChild, nextElementSibling and lastElementChild to move the languages carousel along an
+
 
 Issues encountered:
 

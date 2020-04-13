@@ -114,3 +114,82 @@ function addLeadershipText() {
         leadershipDiv.removeChild(lastDivChild);
     }
 }
+
+//JavaScript below is for the Programming/Scripting Languages section.
+
+//Here is the different carousel slide sections for individual languages
+let JS = document.getElementById("javascript");
+let HTML = document.getElementById("html");
+let CSS = document.getElementById("css");
+let carouselItems = [JS, HTML, CSS];
+
+//Here are the circle numbers
+let circle1 = document.getElementById("circle1");
+let circle2 = document.getElementById("circle2");
+let circle3 = document.getElementById("circle3");
+let circles = [circle1, circle2, circle3];
+
+//The event listener and functions for the right arrow button
+let rightArrow = document.getElementById("rightArrow");
+
+rightArrow.addEventListener("click", moveCarouselRight);
+
+function moveCarouselRight(){
+    let currentSlide = document.querySelector(".currentCarouselSlide"); //This grabs the element with the current slide class.
+    let nextSlide = currentSlide.nextElementSibling; //uses nextElementSibling to determine the next element in the slide track list
+
+    currentSlide.classList.remove("currentCarouselSlide");
+
+    //Once all elements are displayed there is no nextElementSibling to grab so this re-assigns the next slide so it does not result in an error.
+    if (nextSlide === null) { 
+        nextSlide = document.querySelector(".carouselTrack").firstElementChild;
+        nextSlide.classList.add("currentCarouselSlide");
+    } else {
+        nextSlide.classList.add("currentCarouselSlide");
+    }
+
+    //The below is the code to move the circles with the slides
+    let currentCircle = document.querySelector(".currentSlideCircle"); 
+    let nextCircle = currentCircle.nextElementSibling;
+
+    currentCircle.classList.remove("currentSlideCircle");
+
+    if (nextCircle === null) {
+        nextCircle = document.querySelector(".carouselNav").firstElementChild;
+        nextCircle.classList.add("currentSlideCircle");
+    } else {
+        nextCircle.classList.add("currentSlideCircle");
+    }
+}
+
+//The event listener and functions for the left arrow button
+let leftArrow = document.getElementById("leftArrow");
+
+leftArrow.addEventListener("click", moveCarouselLeft);
+
+function moveCarouselLeft(){
+    let currentSlide = document.querySelector(".currentCarouselSlide"); 
+    let previousSlide = currentSlide.previousElementSibling;
+
+    currentSlide.classList.remove("currentCarouselSlide");
+
+    if (previousSlide === null) {
+        previousSlide = document.querySelector(".carouselTrack").lastElementChild;
+        previousSlide.classList.add("currentCarouselSlide");
+    } else {
+        previousSlide.classList.add("currentCarouselSlide");
+    }
+
+    //Moves circles
+    let currentCircle = document.querySelector(".currentSlideCircle"); 
+    let previousCircle = currentCircle.previousElementSibling;
+
+    currentCircle.classList.remove("currentSlideCircle");
+
+    if (previousCircle === null) {
+        previousCircle = document.querySelector(".carouselNav").lastElementChild;
+        previousCircle.classList.add("currentSlideCircle");
+    } else {
+        previousCircle.classList.add("currentSlideCircle");
+    }
+}
