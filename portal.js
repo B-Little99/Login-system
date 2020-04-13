@@ -129,14 +129,47 @@ let circle2 = document.getElementById("circle2");
 let circle3 = document.getElementById("circle3");
 let circles = [circle1, circle2, circle3];
 
+//This changes the slide when a user clicks on a different navigation circle under the carousel
+
+//For each circle in the array an event listener is added so that once it is clicked it will change the circle classes so the clicked circle is selected.
+circles.forEach(circleEventL)
+
+function circleEventL() {
+    for (let i = 0; i < circles.length; i++){
+        circles[i].addEventListener("click", function changeCarousel(ev){
+            let currentSlide = document.querySelector(".currentCarouselSlide");
+            let targetCircle = ev.target
+            let currentCircle = document.querySelector(".currentSlideCircle"); 
+            currentSlide.classList.remove("currentCarouselSlide");
+            currentCircle.classList.remove("currentSlideCircle");
+            targetCircle.classList.add("currentSlideCircle");
+
+            let targetCircleId = targetCircle.id
+
+            //The below switch uses the target circles ID to see what one it matches and then the carousel display changes along with the circle selected.
+            switch(targetCircleId) {
+                case "circle1":
+                    JS.classList.add("currentCarouselSlide");
+                    break;
+                case "circle2":
+                    HTML.classList.add("currentCarouselSlide");;
+                    break;
+                case "circle3":
+                    CSS.classList.add("currentCarouselSlide");;
+                    break;
+            }
+        })
+    }
+}
+
 //The event listener and functions for the right arrow button
 let rightArrow = document.getElementById("rightArrow");
 
 rightArrow.addEventListener("click", moveCarouselRight);
 
 function moveCarouselRight(){
-    let currentSlide = document.querySelector(".currentCarouselSlide"); //This grabs the element with the current slide class.
-    let nextSlide = currentSlide.nextElementSibling; //uses nextElementSibling to determine the next element in the slide track list
+    let currentSlide = document.querySelector(".currentCarouselSlide");
+    let nextSlide = currentSlide.nextElementSibling; //uses nextElementSibling to determine the next element in the slide list
 
     currentSlide.classList.remove("currentCarouselSlide");
 
