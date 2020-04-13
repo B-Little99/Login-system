@@ -68,13 +68,12 @@ h1 {
 
 #skillsContainer {
     display: grid;
-    grid-template-columns: repeat(2, minmax(400px, auto));
-    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: repeat(2, minmax(100px, auto));
+    grid-auto-rows: repeat(3, minmax(150px, auto));
     justify-content: center;
     align-items: stretch;
     justify-items: center;
-    grid-column-gap: 0;
-    grid-row-gap: 30px;
+    grid-gap: 0;
     background-color: #637DFF;
     overflow: visible;
     /* padding-bottom: 60px; */
@@ -82,14 +81,12 @@ h1 {
 }
 
 .divSkill {
-    margin: 15px;
+    margin: 10px;
     cursor: pointer;
     padding: 20px;
 }
 
 .skillsPara {
-    height: 240px;
-    /* padding-bottom: 60px; */
     margin-top: 0;
     font-size: 20px;
 }
@@ -221,5 +218,5 @@ p {
 #gitHub:hover {
     color: rgb(0, 42, 255);
     text-decoration: underline;
-
 }
+
