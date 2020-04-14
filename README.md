@@ -1,25 +1,24 @@
+# Overview
 
+This projects is intended to provide a login system for the user. The login page will only 
+accept certain criteria for passwords and all fields must be entered to be taken to the 
+portfolio page, where the user gets a personalised welcome. From there the portfolio page 
+acts as a way to showoff my skills as a developer.
 
+# Things I learnt: 
 
+ * I learnt about 'childElementCount' to ensure that you cannot keep adding                             text to the skills categories and that if a paragraph is selected again it will collapse.
 
+ * Using the GET method & linking to other pages on form submissions - this enabled me                     to create a personalised welcome message to each user when they entered the portal page.
 
+ * DOM manipulation - using previousElementSibling, firstElementChild, nextElementSibling                   and lastElementChild to move the languages carousel along by changing which element had                 the 'current' class applied to it depending on the circumstances.
 
-Things I learnt: 
+ * Gained experience with the switch statement so that a user can use the circles                        below the language carousel to navigate, providing a better user experience.
 
-    To ensure that you could also remove the skills text if you clicked again I learnt about the childElementCount 
-    JavaScript which I utilised in my functions to determine if the text should be added or removed.
+# Issues encountered:
 
-    lastChild
+The **biggest** issue I faced was not knowing the syntax for what I wanted to do. To make sure I was able to complete the intended functionality I done lots of research into topics, such as DOM manipulation, so I had a more comprehensive understanding of what syntax was available and what it could do.
 
-    DOM manipulation - using previousElementSibling, firstElementChild, nextElementSibling and lastElementChild to move the languages carousel along an
+When I was coding the skill section JavaScript I encountered a problem that would not let me remove the text after adding it. My first step was to review the code that involved manipulating DOM children as this was new to me, which after doing tests and checking syntax it was fine. My next step was to review the function as a whole, which found that there was a previous line of code which removed the event listener.
 
-
-Issues encountered:
-
-    There was a problem with the code that when I added the else if statement to remove a child element 
-    on a second click if there was already the text in the div that it would not occur. Firstly I reviewed
-    all my code that I had added to the else if statement since I was new to working with child element 
-    syntax so initially thought it could be that. There did not seem to be any errors so I moved onto to 
-    reviewing the whole function and noticed that previously to stop the user being able to add the same 
-    text I used the removeEventListener and once that was removed the issue was fixed and the user can 
-    click to add the text and then remove the text if they click again.
+While this worked to create the basic ability to add text to the grid it affected the users ability to remove the text when I wanted to go beyond the basics. Removing this fixed the issue and allows users to add/remove text.
