@@ -1,3 +1,11 @@
+//Adds introductory message for user
+let URL = window.location.search;
+let URLsplit = URL.split("&");
+let userName = URLsplit[0].slice(6, URLsplit[0].length);
+let introBox = document.getElementById("introName")
+
+introBox.innerText = `Welcome ${userName}!`; 
+
 //Parent nodes I will attach the text to.
 let problemSolvingDiv = document.getElementById("divProblemSolving");
 let commsDiv = document.getElementById("divComms");
